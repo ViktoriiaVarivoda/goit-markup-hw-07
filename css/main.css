@@ -794,7 +794,7 @@ p {
   margin-bottom: 12px;
 }
 
-.modal__input {
+.modal-form-input-wrap__input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -805,28 +805,28 @@ p {
   transition: border 250ms var(--animation);
 }
 
-.modal__input:focus {
+.modal-form-input-wrap__input:focus {
   border: 1px solid var(--accent-color);
 }
 
-.modal__input-wrap {
+.modal-form-input-wrap {
   position: relative;
   margin-top: 4px;
   margin-bottom: 10px;
 }
 
-.modal__input-icon {
+.modal-form-input-wrap__input-icon {
   position: absolute;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.modal__input:focus + .modal__input-icon {
+.modal-form-input-wrap:focus + .modal-form-input-wrap__input-icon {
   fill: var(--accent-color);
 }
 
-.modal__btn {
+.modal-form-btn {
   width: 200px;
   height: 50px;
   background: var(--accent-color);
@@ -852,11 +852,11 @@ p {
   transition: background-color 250ms var(--animation);
 }
 
-.modal__btn:hover, .modal__btn:focus {
+.modal-form-btn:hover, .modal-form-btn:focus {
   background-color: #0f76ca;
 }
 
-.modal__text {
+.modal-form__text {
   width: 58px;
   height: 14px;
   font-size: 12px;
@@ -865,7 +865,7 @@ p {
   color: var(--header-color);
 }
 
-.textarea {
+.modal-form-textarea__textarea {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -879,18 +879,18 @@ p {
   transition: border 250ms var(--animation);
 }
 
-.textarea::placeholder {
+.modal-form-textarea__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   letter-spacing: 0.01em;
   line-height: 1.17;
 }
 
-.textarea:focus {
+.modal-form-textarea__textarea:focus {
   border: 1px solid var(--accent-color);
 }
 
-.modal__top-text {
+.modal-form-checkbox__top-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -899,7 +899,7 @@ p {
   align-items: center;
 }
 
-.modal__top-text span {
+.modal-form-checkbox__top-text span {
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
@@ -911,25 +911,25 @@ p {
   transition: border-color 250ms var(--animation);
 }
 
-.modal__input-checkbox:focus + .modal__top-text span {
+.modal-form-input-wrap-checkbox:focus + .modal-form-checkbox__top-text span {
   border-color: var(--accent-color);
 }
 
-.check-icon {
+.modal-form-check__icon {
   fill: transparent;
 }
 
-.check-icon_link {
+.modal-form-check__link {
   color: var(--accent-color);
   padding-left: 7px;
 }
 
-.modal__input-checkbox:checked + .modal__top-text span {
+.modal-form-checkbox__input-checkbox:checked + .modal-form-checkbox__top-text span {
   background: var(--accent-color);
   border: transparent;
 }
 
-.modal__input-checkbox:checked + .modal__top-text span .check-icon {
+.modal-form-checkbox__input-checkbox:checked + .modal-form-checkbox__top-text span .modal-form-check__icon {
   fill: var(--main-color);
 }
 

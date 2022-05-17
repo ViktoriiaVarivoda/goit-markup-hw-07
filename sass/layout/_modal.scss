@@ -70,7 +70,7 @@
         }
 }
 
-.modal-form-input-wrap__input-wrap {
+.modal-form-input-wrap {
     position: relative;
     margin-top: 4px;
     margin-bottom: 10px;
@@ -81,12 +81,12 @@
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    .modal-form-input-wrap__input:focus + & {
+    .modal-form-input-wrap:focus + & {
             fill: var(--accent-color);
         }
 }
 
-.modal__btn {
+.modal-form-btn{
     width: 200px;
     height: 50px;
     background: var(--accent-color);
@@ -116,7 +116,7 @@
         }
 }
 
-.modal-form-field_text {
+.modal-form__text {
     width: 58px;
     height: 14px;
     font-size: 12px;
@@ -125,7 +125,7 @@
     color: var(--header-color);
 }
 
-.textarea {
+.modal-form-textarea__textarea {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -148,7 +148,7 @@
         }
 }
 
-.modal__top-text {
+.modal-form-checkbox__top-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -157,7 +157,7 @@
     align-items: center;
 }
 
-.modal__top-text span {
+.modal-form-checkbox__top-text span {
     width: 16px;
     height: 15px;
     border: 2px solid #000000;
@@ -167,26 +167,26 @@
     align-items: center;
     justify-content: center;
     transition: border-color 250ms var(--animation);
-    .modal-form-input-wrap__input-checkbox:focus + & {
+    .modal-form-input-wrap-checkbox:focus + & {
             border-color: var(--accent-color);
         }
 }
 
-.check-icon {
+.modal-form-check__icon {
     fill: transparent;
 }
 
-.check-icon_link {
+.modal-form-check__link {
     color: var(--accent-color);
     padding-left: 7px;
 }
 
-.modal-form-input-wrap-checkbox:checked+.modal__top-text span {
+.modal-form-checkbox__input-checkbox:checked+.modal-form-checkbox__top-text span {
     background: var(--accent-color);
     border: transparent;
 }
 
-.modal-form-input-wrap__input-checkbox:checked+.modal__top-text span .check-icon {
+.modal-form-checkbox__input-checkbox:checked+.modal-form-checkbox__top-text span .modal-form-check__icon {
     fill: var(--main-color);
 }
 
